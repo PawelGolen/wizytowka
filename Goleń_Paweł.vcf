@@ -5,16 +5,17 @@ N:Goleń;Paweł;;;
 FN:Paweł Goleń
 ORG:Automatyzacja Biurowa;
 EMAIL;type=INTERNET;type=WORK;type=pref:kontakt@automatyzacjabiurowa.pl
-TEL;type=CELL;type=VOICE;type=pref:663 010 437
-item1.ADR;type=pref:;;Prężycka\n29/2;Wrocław;;54-072;Polska
+TEL;type=CELL;type=VOICE;type=pref:+48663010437
+ADR;TYPE=WORK:;;Prężycka 29/2;Wrocław;;54-072;Polska
+item1.ADR;TYPE=pref:;;Prężycka 29/2;Wrocław;;54-072;Polska
 item1.X-ABLabel:siedziba
 item1.X-ABADR:PL
 X-SOCIALPROFILE;type=GitHub;x-user="https://github.com/PawelGolen":x-apple:https%3A//github.com/PawelGolen
-X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/www.linkedin.com/in/golen
+X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/golen
 NOTE:Nazywam się Paweł Goleń i pomagam przedsiębiorcom odzyskiwać czas dzięki inteligentnej automatyzacji procesów biznesowych.\n\nNa co dzień wspieram korporacje jako Data Engineer w międzynarodowym środowisku IT\, gdzie automatyzuję złożone przepływy danych i tworzę rozwiązania w chmurze AWS i Azure korzystając m.in. z technologii takich jak Python\, SQL\, PySpark\, Spark SQL\, VBA\, Make\, ChatGPT\, Claude\, Gamma\, Google Scripts\, Power Automate i inne. Wiem jednak\, że to nie tylko wielkie korporacje potrzebują usprawnień – małe i średnie firmy również mogą działać szybciej\, prościej i bez zbędnej pracy ręcznej.\n\nDlatego stworzyłem firmę\, która pozwala zautomatyzować codzienne zadania – od faktur i formularzy\, przez przypomnienia i raporty\, po obieg dokumentów. Bez zbędnych słów i technicznych skrótów. Po prostu – rozwiązania\, które oszczędzają czas i eliminują chaos.\n\nW pracy łączę podejście analityczne z ludzkim językiem. Nie wciskam narzędzi – najpierw słucham\, potem projektuję proces dla Ciebie.\n\n#Automatyzacja #AutomatyzacjaProcesów #InteligentnaAutomatyzacja #DataEngineer  \n#AI #Optymalizacja #Raporty #Faktury #ObiegDokumentów  \n#Efektywność #OszczędnośćCzasu #AutomatyzacjaBiurowa #AutomatyzacjaFirmowa
-item2.URL;type=pref:automatyzacjabiurowa.pl
+item2.URL;TYPE=WORK;TYPE=pref:https://automatyzacjabiurowa.pl
 item2.X-ABLabel:_$!<HomePage>!$_
-item3.IMPP;X-SERVICE-TYPE=WhatsApp;type=pref:x-apple:Pawe%C5%82%20Gole%C5%84
+item3.IMPP;X-SERVICE-TYPE=WhatsApp:waid=48663010437
 item3.X-ABLabel:WhatsApp
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAA
  AAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAABQKADAAQAAAABAAABQAAAAAD/4gHYSU
@@ -351,4 +352,5 @@ PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAA
  6XnYoReAK5vw/po0yxVG5lf5nPqxrd3HNccpXZTQvU5NOpmaXdUiHU8Gox0p2cUAPopu6kJzQA
  hPeoWNSE9qrsc0Af/9k=
 END:VCARD
+
 
