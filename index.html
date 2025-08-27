@@ -1,40 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zapisz mój kontakt</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wizytówka – Paweł Goleń</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #FFFFFF;
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      background-color: #204C8E;
-      border-radius: 3px; /* delikatne zaokrąglenia */
-      text-decoration: none;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      transition: background-color 0.2s ease;
-    }
-
-    a.button:hover {
-      background-color: #183d70;
-    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;display:grid;place-items:center;min-height:100svh;background:#0f172a;color:#e2e8f0}
+    .card{background:#111827;padding:32px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:560px;text-align:center}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:6px 0 18px;opacity:.9}
+    button{padding:14px 20px;border-radius:14px;border:0;background:#204C8E;color:#fff;font-weight:700;cursor:pointer}
+    button:hover{filter:brightness(1.05)}
+    .sub{font-size:14px;opacity:.8;margin-top:14px}
   </style>
 </head>
 <body>
+  <div class="card">
+    <h1>Paweł Goleń</h1>
+    <p>Cloud Data Engineer · Automatyzacja procesów (AWS · Azure · ETL · AI)</p>
+    <button id="saveContact">📇 Zapisz mój kontakt</button>
+    <div class="sub">Po kliknięciu telefon zaproponuje dodanie do kontaktów.</div>
+  </div>
 
-  <a class="button" href="Goleń_Paweł.vcf" download="Goleń_Paweł.vcf">
-    Zapisz mój kontakt
-  </a>
+  <script>
+    const VCF_PATH = "./Goleń_Paweł.vcf"; // nazwa Twojego pliku w repo
 
+    async function openVCard() {
+      try {
+        const res = await fetch(VCF_PATH, { cache: "no-store" });
+        if (!res.ok) throw new Error("Nie mogę pobrać vCard");
+        const vcfText = await res.text();
+        const blob = new Blob([vcfText], { type: "text/vcard;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Goleń_Paweł.vcf";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+      } catch(e) {
+        alert("Ups, nie udało się otworzyć wizytówki.");
+        console.error(e);
+      }
+    }
+    document.getElementById("saveContact").addEventListener("click", openVCard);
+  </script>
 </body>
 </html>
