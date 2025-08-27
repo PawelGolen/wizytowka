@@ -4,7 +4,7 @@ PRODID:-//Apple Inc.//iPhone OS 18.5//EN
 N:Goleń;Paweł;;;
 FN:Paweł Goleń
 ORG:Automatyzacja Biurowa;
-EMAIL;type=INTERNET;type=WORK;type=pref:kontakt@automatyzacjabiurowa@.pl
+EMAIL;type=INTERNET;type=WORK;type=pref:kontakt@automatyzacjabiurowa.pl
 TEL;type=CELL;type=VOICE;type=pref:663 010 437
 item1.ADR;type=pref:;;Prężycka\n29/2;Wrocław;;54-072;Polska
 item1.X-ABLabel:siedziba
@@ -351,3 +351,4 @@ PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAASABIAAD/4QBARXhpZgAATU0AKgAA
  6XnYoReAK5vw/po0yxVG5lf5nPqxrd3HNccpXZTQvU5NOpmaXdUiHU8Gox0p2cUAPopu6kJzQA
  hPeoWNSE9qrsc0Af/9k=
 END:VCARD
+
